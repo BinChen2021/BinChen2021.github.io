@@ -1,0 +1,2 @@
+# Introduction
+This is the source code to [Bin Chen](https://binchen2021.github.io/)'s public academic website. The code is forked from https://github.com/AndyTang15/AndyTang15.github.io/, and some improvements are implemented to make the website more user-friendly. Feel free to clone this code for your own personal use.
