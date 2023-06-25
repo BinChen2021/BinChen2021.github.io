@@ -1,0 +1,327 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Yansong Tang</title>
+  
+  <meta name="author" content="Bin Chen">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/icon.png">
+    <style>
+        /* color
+            #4e606c rgb(78, 96, 108)
+            #7993a2 rgb(121, 147, 162)
+            #cde2e9 rgb(205, 226, 233)
+        */
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        a {
+            color: #4e606c;
+            text-decoration: none;
+        }
+        a:focus,
+        a:hover {
+            background-color: #4e606c;
+            color: white;
+        }
+
+        body{
+            /* background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; */
+            background: linear-gradient(to bottom, rgba(205, 226, 233,0.15) 0%, rgba(78, 96, 108,0.15) 100%), radial-gradient(at top center, rgba(205, 226, 233,0.40) 0%, rgba(78, 96, 108,0.40) 120%) #7993a2;
+            background-blend-mode: multiply,multiply;
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            min-width: 1100px;
+            height: 1000px;
+        }
+        
+        .card{
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+            box-shadow: 10px 10px 10px rgba(78, 96, 108, 0.6);
+        }
+
+        dot{
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #4e606c;
+            display: inline-block;
+            margin: 2px 8px;
+        }
+        
+        nav{
+            width: 1000px;
+            height: 48px;
+            margin: 8px auto 24px auto;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+
+            line-height: 48px;
+            display: flex;       
+        }
+        nav>div{
+            flex-grow: 1;   /* 设置增长系数 */
+        }
+        nav a{
+            text-decoration: none;
+            display: block;
+            font-size: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        main{
+            width: 940px;
+            margin: auto;
+        }
+
+        .font-small, .font-small *{
+            line-height: 22px;
+            font-size: 16px;
+        }
+        .font-normal, .font-normal *{
+            line-height: 24px;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+        .font-large, headline{
+            line-height: 64px;
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        headline{
+            text-decoration: underline; 
+            color: #4e606c; 
+            font-style: italic;
+        }
+
+        table{
+            border-collapse: collapse;
+            border: 0px;
+            /* vertical-align: middle; */
+            text-align: center;
+        }
+        /* td{
+            border: 5px solid;
+        } */
+
+        #intro{
+            margin: auto 0 auto 20px;
+            padding: 10px;
+        }
+
+        #content>li{
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        #publications table{
+            width: 96%;
+            margin: 10px auto;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.5);
+            text-align: left;
+        }
+        #publications table:hover{
+            background-color: white;
+        }
+  </style>
+</head>
+
+<body>
+    <nav class="card">
+        <div><a href="#">Home</a></div>
+        <div><a href="#news">News</a></div>
+        <div><a href="#publications">Publications</a></div>
+        <div><a href="#teaching">Teaching</a></div>
+        <div><a href="#awards">Awards&Honors</a></div>
+        <div><a href="#group">Group</a></div>
+        <div><a href="#services">Academic Services</a></div>
+    </nav>
+
+    <main>
+        <table>
+            <tr>
+                <td style="width: 25%;">
+                    <img src="images/yansongtang.jpg" alt="profile photo" width="100%" class="card">
+                    <div class="card" style="margin-top: 20px;">
+                        <p class="font-small" style="font-weight: bold;">Bin Chen</p>
+                        <p class="font-small">研究方向</p>
+                        <p class="font-small">职位/单位</p>
+                        <ul class="font-small">
+                            <li>位置</li>
+                            <li>wechat</li>
+                            <li>Email</li>
+                            <li>Github</li>
+                            <li>Google Scholar</li>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <div class="card" id="intro">
+                        <p class="font-large">Bin Chen (陈斌)</p>
+                        <p class="font-normal" style="text-align: justify;">I am currently an Assistant Professor with the Department of Computer Science and TechnologyHarbin Institute of 
+                            Technology, Shenzhen (HITSZ). I got my Ph.D. from the Department of Computer Science and Technology, Tsinghua University under the supervision of Prof. Shu-Tao Xia. 
+                            I have also been fortunate to visit Prof. En-Hui Yang at the University of Waterloo (UW) from Dec 2019 to May 2020. My research interests include Coding theory and 
+                            Information Theory, Machine Learning and Deep Learning. <a href="https://www.tbsi.edu.cn">Tsinghua-Berkeley Shenzhen Institute.</a>
+                        </p>
+                        <p class="font-normal" style="text-align: justify; margin-top: 8px;">
+                            占位符Placeholder占位符Placeholder占位符Placeholder占位符Placeholder占位符Placeholder占位符Placeholder占位符Placeholder占位符Placeholder占位符Placeholder占位符Placeholder
+                            占位符Placeholder占位符Placeholder
+                        </p>
+                        <p class="font-normal" style="text-align: justify; margin-top: 8px;">
+                            占位符Placeholder占位符Placeholder占位符Placeholder占位符Placeholder占位符Placeholder占位符Placeholder占位符Placeholder占位符Placeholder占位符Placeholder占位符Placeholder
+                            占位符Placeholder占位符Placeholder
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+
+        <ul id="content">
+            <li id="news" class="card">
+                <headline>News</headline>
+                <ul>
+                    <li class="font-normal">
+                        <dot></dot><b>2023-02: </b>Two papers on human activity understanding got accepted by CVPR 2023. Two papers on human activity understanding got accepted by CVPR 2023.
+                    </li>
+                    <li class="font-normal">
+                        <dot></dot><b>2023-02: </b>Two papers on human activity understanding got accepted by CVPR 2023.
+                    </li>
+                    <li class="font-normal">
+                        <dot></dot><b>2023-02: </b>Two papers on human activity understanding got accepted by CVPR 2023. <a href="https://www.tbsi.edu.cn">Tsinghua-Berkeley Shenzhen Institute.</a>
+                    </li>
+                    <li class="font-normal">
+                        <dot></dot><b>2023-02: </b>Two papers on human activity understanding got accepted by CVPR 2023.</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li id="publications" class="card">
+                <headline>Publications</headline>
+                <p class="font-normal" style="margin-left: 16px;">* Equal Contribution, # Corresponding Author, click <a href="#">here</a> for the full list.</p>
+                
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src="images/FLAG3D.PNG" alt="dise">
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">FLAG3D: A 3D Fitness Activity Dataset with Language Instruction</papertitle>
+                            <br>
+                            <b>Yansong Tang*</b>, Jinpeng Liu*, Aoyang Liu*, Bin Yang, Wenxun Dai, Yongming Rao, Jiwen Lu, Jie Zhou, Xiu Li
+                            <br>
+                            <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)</em>, 2023
+                            <br>
+                            <a href="https://arxiv.org/pdf/2212.04638.pdf">[arXiv (initial version)]</a>
+                            <a href="https://andytang15.github.io/FLAG3D/">[Project Page]</a> 
+                            <br><br>
+                            <p> We present FLAG3D, a large-scale 3D fitness activity dataset with language instruction.</p>
+                        </td>
+                    </tr>
+                </table>
+
+                
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src='images/lavt.png' alt="dise">
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">LAVT: Language-Aware Vision Transformer for Referring Image Segmentation</papertitle>
+                            <br>
+                            Zhao Yang*, Jiaqi Wang*, <b>Yansong Tang#</b>, Kai Chen, Hengshuang Zhao, Philip H.S. Torr
+                            <br>
+                            <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)</em>, 2022
+                            <br>
+                            <a href="https://arxiv.org/pdf/2112.02244v2.pdf">[arxiv]</a>
+                            <a href="https://github.com/yz93/LAVT-RIS">[code]</a>
+                            <a href="https://mp.weixin.qq.com/s/k8IgExjxybRSscoRy-jHSg">[中文解读]</a> 	    
+                            <br><br>
+                            <p> We present an end-to-end hierarchical Transformer-based network for referring segmentation.</p>
+                        </td>
+                    </tr>	
+                </table>
+            </li>
+
+
+            <li id="teaching" class="card">
+                <headline>Teaching</headline>
+                <ul>
+                    <li class="font-normal">
+                        <dot></dot><b>Data Mining: Theory and Algorithms</b>, Fall 2022 (with Prof. Xinlei Chen)
+                    </li>
+                </ul>
+            </li>
+
+
+            <li id="awards" class="card">
+                <headline>Awards&Honors</headline>
+                <p class="font-normal">
+                    <dot></dot>2022年度广东省计算机学会优秀论文二等奖;<br>  
+                    <dot></dot>2021年深圳市人工智能学会优秀博士论文 (排名第一);<br>
+                    <dot></dot>2021年中国电子学会信息论分会优秀博士论文 (年度唯一);<br>
+                    <dot></dot>清华大学计算机系优秀博士毕业生;<br>
+                    <dot></dot>清华大学博士生国家奖学金2次, 2019/2020, Top 0.3%;<br>
+                    <dot></dot>华南师范大学硕士生国家奖学金1次, 2015, Top 1%;<br>                   
+                </p>
+            </li>
+
+
+            <li id="group" class="card">
+                <headline>Group</headline>
+                <ul>
+                    <li class="font-normal">
+                        <dot></dot><b>Data Mining: Theory and Algorithms</b>, Fall 2022 (with Prof. Xinlei Chen)
+                    </li>
+                </ul>
+            </li>
+
+
+            <li id="services" class="card">
+                <headline>Academic Services</headline>
+                <ul>
+                    <li class="font-normal">
+                        <dot></dot><b>Journal Reviewer</b><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEEE Transactions on Information Theory<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEEE Transactions on Communications<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEEE communication letter<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEEE Access<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEICE Transactions on Fundamentals of Electronics, Communications, and Computer Sciences<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEICE Transactions on Information and Systems<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Science China on Information Science<br>
+                    </li>
+                    <li class="font-normal">
+                        <dot></dot><b>Conference Reviewer / Program Committee Member</b><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020 Neural Information Processing Systems (NeurIPS20)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017 IEEE International Symposium on Information Theory (ISIT)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020 /2021 IEEE Data Compression Conference (DCC)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2021  AAAI Conference on Artificial Intelligence (AAAI-21)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2021 International Joint Conference on Artificial Intelligence (IJCAI-21)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)<br>
+                    </li>
+                    <li class="font-normal">
+                        <dot></dot><b>AMS Mathematical Reviewer</b><br>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
