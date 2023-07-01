@@ -36,8 +36,8 @@
         
         .card{
             border-radius: 8px;
-            background-color: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(8px);
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(2px);
             box-shadow: 10px 10px 10px rgba(78, 96, 108, 0.6);
             border: 1px black solid;
         }
@@ -53,7 +53,7 @@
         
         nav{
             width: 1000px;
-            height: 48px;
+            /* height: 48px; */
             margin: 0 auto;
             position: fixed;
                 left: 0;
@@ -61,10 +61,12 @@
                 top: 5px;
             z-index: 10;
 
-            line-height: 46px;
+            line-height: 48px;
             display: flex;
-            background-color: hsl(204, 32%, 36%) !important;
-            border: 0 !important;       
+            /* background-color: hsl(204, 32%, 36%) !important; */
+            /* border: 0 !important; */
+            background-color: white !important;
+            border: hsl(204, 40%, 36%) 1px solid !important;
         }
         nav>div{
             flex-grow: 1;   /* 设置增长系数 */
@@ -73,14 +75,15 @@
             text-decoration: none;
             display: block;
             font-size: 20px;
+            font-weight: bold;
             text-align: center;
-            border-radius: 8px;
-            color: white;
-            border: hsl(204, 40%, 36%) 1px solid;
+            border-radius: 6px;
+            /* color: white; */
+            /* border: hsl(204, 40%, 36%) 1px solid; */
         }
         nav a:hover, a:focus{
-            background-color: white;
-            color: hsl(204, 64%, 36%);
+            background-color: hsl(204, 40%, 36%);
+            color: white;
         }
 
         main{
@@ -145,10 +148,11 @@
 </head>
 
 <body>
+    <!-- 背景图 -->
     <!-- <div style="position: fixed; top: 50%; left: 50%; margin-top: -540px; margin-left: -570px; height: 1200px; width: 1000px; overflow: hidden;">
         <img src="images/logo中英组合-白.png" height="100%">
     </div> -->
-    <div style="position: fixed; top: 0; left: 0; right: 0; margin: 0 auto; width: 1020px; height: 100vh; text-align: center; background-color: white;">
+    <div style="position: fixed; top: 0; left: 0; right: 0; margin: 0 auto; width: 1020px; height: 100vh; text-align: center; background-color: white; z-index: -1;">
         <table style="width: 100%;margin-top: 0;">
             <tr>
                 <td>
@@ -156,9 +160,9 @@
                 </td>
             </tr>
         </table>
-        
     </div>
-    <!-- 注释 -->
+    
+    <!-- 导航栏 -->
     <nav class="card">
         <div><a href="#">Home</a></div>
         <div><a href="#news">News</a></div>
@@ -173,7 +177,9 @@
         <table>
             <tr>
                 <td style="width: 25%;">
+                    <!-- 个人照片 -->
                     <img src="images/binchen.jpg" alt="profile photo" width="100%" class="card">
+                    <!-- 快速链接 -->
                     <div class="card" style="margin-top: 20px; padding: 10px; text-align: left;">
                         <ul class="font-small">
                             <li>
@@ -192,6 +198,7 @@
                     </div>
                 </td>
                 <td>
+                    <!-- 个人介绍 -->
                     <div class="card" id="intro">
                         <p class="font-large">Bin Chen (陈斌)</p>
                         <p class="font-normal" style="text-align: justify;">
@@ -199,12 +206,37 @@
                             I got my Ph.D. from the Department of Computer Science and Technology, <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>, under the supervision of 
                             <a href="https://scholar.google.com/citations?user=koAXTXgAAAAJ">Prof. Shu-Tao Xia </a>. I have also been fortunate to visit 
                             <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/ehyang">Prof. En-Hui Yang </a> at the University of Waterloo (UW) from Dec 2019 to May 2020.
-                            My research interests include Coding theory and Information Theory, Machine Learning and Deep Learning, AI Security.
+                            My research interests include Coding Theory and Information Theory, Machine Learning and Deep Learning.
                         </p>
                         <p class="font-normal" style="text-align: justify; margin-top: 8px;">
-                            研究方向，参考 http://faculty.hitsz.edu.cn/BinChen 
+                            <b>Research Fields</b>
                         </p>
-                        <img src="images/researches.png" width="90%">
+                        <p class="font-normal" style="text-align: justify; text-decoration: underline; margin-top: 2px;">
+                            <dot></dot>Coding Theory and Information Theory
+                        </p>
+                        <ul class="font-small" style="text-align: justify; margin-left: 24px;">
+                            <li>
+                                <b>Coding Theory: &nbsp; </b>分布式存储纠删码; &nbsp; 基于深度学习的信道编译码; 
+                            </li>
+                            <li>
+                                <b>Information Theory: &nbsp; </b>深度压缩感知理论及逆问题; &nbsp; 语义压缩/通信; &nbsp; 有损压缩的率失真理论;
+                            </li>
+                        </ul>
+                        <p class="font-normal" style="text-align: justify; text-decoration: underline; margin-top: 2px;">
+                            <dot></dot>Machine Learning and Deep Learning: Theory and Applications
+                        </p>
+                        <ul class="font-small" style="text-align: justify; margin-left: 24px;">
+                            <li>
+                                <b>图像/视频/深度模型压缩: &nbsp; </b>点对点/分布式通信场景下/多视角的有损/无损图像/视频语义压缩; &nbsp; 深度模型压缩；
+                            </li>
+                            <li>
+                                <b>图像/视频/多模态检索: &nbsp; </b>基于哈希/乘积量化的快速检索算法; &nbsp; 多模态/跨模态/细粒度图像/视频检索/检索增强及其应用；
+                            </li>
+                            <li>
+                                <b>AI Security: &nbsp; </b>Adversarial Machine Learning; &nbsp; AIGC and its privacy security; &nbsp; 分布式/联邦梯度压缩与隐私安全; 
+                            </li>
+                        </ul>
+                        <p class="font-normal" style="margin: 8px 0 4px 0; font-weight: bold; color: hsl(204, 64%, 36%);"><i>"Theory without Practice is empty; Practice without Theory is blind!"</i></p>
                     </div>
                 </td>
             </tr>
@@ -212,6 +244,7 @@
 
 
         <ul id="content">
+            <!-- news -->
             <li id="news" class="card">
                 <headline>News</headline>
                 <p class="font-normal">讲座信息, 招生信息</p>
@@ -231,10 +264,10 @@
                 </ul>
             </li>
 
-
+            <!-- publications -->
             <li id="publications" class="card">
                 <headline>Publications</headline>
-                <p class="font-normal" style="margin-left: 16px;">* Equal Contribution, # Corresponding Author, click <a href="#">here</a> for the full list.主要是A会</p>
+                <p class="font-normal" style="margin-left: 16px;">* Equal Contribution, # Corresponding Author, click <a href="https://scholar.google.com/citations?user=Yl0wv7AAAAAJ">here</a> for the full list.</p>
                 
                 <table class="font-small">
                     <tr>
@@ -256,7 +289,6 @@
                     </tr>
                 </table>
 
-                
                 <table class="font-small">
                     <tr>
                         <td style="padding:10px; width:25%;" align="center">
@@ -298,7 +330,7 @@
                 </table>
             </li>
 
-
+            <!-- groups -->
             <li id="groups" class="card">
                 <headline>Groups</headline>
                 <ul>
@@ -312,10 +344,11 @@
                 </ul>
             </li>
 
-
+            <!-- teaching -->
             <li id="teaching" class="card">
-                <headline>Teaching 本科教学</headline>
-                本科生管理
+                <headline>Teaching</headline>
+                <br>本科教学
+                <br>本科生管理
                 1. 文献调研
                 2. benchmark 代码仓库
                 <ul>
@@ -325,7 +358,7 @@
                 </ul>
             </li>
 
-
+            <!-- Awards&Honors -->
             <li id="awards" class="card">
                 <headline>Awards&Honors</headline>
                 <p class="font-normal">
@@ -338,7 +371,7 @@
                 </p>
             </li>
 
-
+            <!-- Academic Services -->
             <li id="services" class="card">
                 <headline>Academic Services</headline>
                 <ul>
