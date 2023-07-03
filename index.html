@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <title>Bin Chen (陈斌)</title>
-  
-  <meta name="author" content="Bin Chen">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.css">
-  <link rel="icon" type="image/png" href="images/icon.png">
+    <title>Bin Chen (陈斌)</title>
+
+    <meta name="author" content="Bin Chen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="icon" type="image/png" href="images/icon.png">
     <style>
         *{
             margin: 0;
@@ -31,9 +31,9 @@
             background-blend-mode: multiply,multiply;
             background-repeat: no-repeat;
             background-attachment:fixed;
-            min-width: 1000px;
+            min-width: 1040px;
         }
-        
+
         .card{
             border-radius: 8px;
             background-color: rgba(255, 255, 255, 0.9);
@@ -50,19 +50,20 @@
             display: inline-block;
             margin: 2px 8px;
         }
-        
+
         nav{
             width: 1000px;
             /* height: 48px; */
             margin: 0 auto;
             position: fixed;
-                left: 0;
-                right: 0;
-                top: 5px;
+            left: 0;
+            right: 0;
+            top: 5px;
             z-index: 10;
 
             line-height: 48px;
             display: flex;
+            overflow: hidden;
             /* background-color: hsl(204, 32%, 36%) !important; */
             /* border: 0 !important; */
             background-color: white !important;
@@ -89,7 +90,6 @@
         main{
             width: 940px;
             margin: auto;
-
         }
 
         .font-small, .font-small *{
@@ -108,8 +108,8 @@
             letter-spacing: 1px;
         }
         headline{
-            text-decoration: underline; 
-            color: hsl(204, 64%, 36%); 
+            text-decoration: underline;
+            color: hsl(204, 64%, 36%);
             font-style: italic;
         }
 
@@ -144,267 +144,309 @@
         #publications table:hover{
             background-color: rgba(33, 104, 151, 0.2);
         }
-  </style>
+    </style>
 </head>
 
 <body>
-    <!-- 背景图 -->
-    <!-- <div style="position: fixed; top: 50%; left: 50%; margin-top: -540px; margin-left: -570px; height: 1200px; width: 1000px; overflow: hidden;">
-        <img src="images/logo中英组合-白.png" height="100%">
-    </div> -->
-    <div style="position: fixed; top: 0; left: 0; right: 0; margin: 0 auto; width: 1020px; height: 100vh; text-align: center; background-color: white; z-index: -1;">
-        <table style="width: 100%;margin-top: 0;">
-            <tr>
-                <td>
-                    <img src="images/hitsz-logo.jpg" width="100%">
-                </td>
-            </tr>
-        </table>
-    </div>
-    
-    <!-- 导航栏 -->
-    <nav class="card">
-        <div><a href="#">Home</a></div>
-        <div><a href="#news">News</a></div>
-        <div><a href="#publications">Publications</a></div>
-        <div><a href="#groups">Groups</a></div>
-        <div><a href="#teaching">Teaching</a></div>
-        <div><a href="#awards">Awards&Honors</a></div>      
-        <div><a href="#services">Academic Services</a></div>
-    </nav>
+<!-- 背景图 -->
+<!-- <div style="position: fixed; top: 50%; left: 50%; margin-top: -540px; margin-left: -570px; height: 1200px; width: 1000px; overflow: hidden;">
+    <img src="images/logo中英组合-白.png" height="100%">
+</div> -->
+<div style="position: fixed; top: 0; left: 0; right: 0; margin: 0 auto; width: 1020px; height: 100%; text-align: center; background-color: white; z-index: -1;">
+    <table style="width: 100%;margin-top: 0;">
+        <tr>
+            <td>
+                <img src="images/hitsz-logo.jpg" width="100%">
+            </td>
+        </tr>
+    </table>
+</div>
 
-    <main>
-        <table>
-            <tr>
-                <td style="width: 25%;">
-                    <!-- 个人照片 -->
-                    <img src="images/binchen.jpg" alt="profile photo" width="100%" class="card">
-                    <!-- 快速链接 -->
-                    <div class="card" style="margin-top: 20px; padding: 10px; text-align: left;">
-                        <ul class="font-small">
-                            <li>
-                                <img src="images/envelope-regular.svg" style="height: 1em; vertical-align: middle; margin: 6px;">
-                                <a href="mailto:chenbin2021@hit.edu.cn">Email</a>
-                            </li>
-                            <li>
-                                <img src="images/link-solid.svg" style="height: 1em; vertical-align: middle; margin: 4px;">
-                                <a href="https://dblp.uni-trier.de/pid/22/5523-11.html">DBLP</a>
-                            </li>
-                            <li>
-                                <img src="images/graduation-cap-solid.svg" style="height: 1em; vertical-align: middle; margin: 4px;">
-                                <a href="https://scholar.google.com/citations?user=Yl0wv7AAAAAJ">Google Scholar</a>
-                            </li>
-                        </ul>
-                    </div>
-                </td>
-                <td>
-                    <!-- 个人介绍 -->
-                    <div class="card" id="intro">
-                        <p class="font-large">Bin Chen (陈斌)</p>
-                        <p class="font-normal" style="text-align: justify;">
-                            I am currently an Assistant Professor with the Department of Computer Science and Technology, <a href="https://www.hitsz.edu.cn/index.html">Harbin Institute of Technology, Shenzhen (HITSZ).</a> 
-                            I got my Ph.D. from the Department of Computer Science and Technology, <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>, under the supervision of 
-                            <a href="https://scholar.google.com/citations?user=koAXTXgAAAAJ">Prof. Shu-Tao Xia </a>. I have also been fortunate to visit 
-                            <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/ehyang">Prof. En-Hui Yang </a> at the University of Waterloo (UW) from Dec 2019 to May 2020.
-                            My research interests include Coding Theory and Information Theory, Machine Learning and Deep Learning.
-                        </p>
-                        <p class="font-normal" style="text-align: justify; margin-top: 8px;">
-                            <b>Research Fields</b>
-                        </p>
-                        <p class="font-normal" style="text-align: justify; text-decoration: underline; margin-top: 2px;">
-                            <dot></dot>Coding Theory and Information Theory
-                        </p>
-                        <ul class="font-small" style="text-align: justify; margin-left: 24px;">
-                            <li>
-                                <b>Coding Theory: &nbsp; </b>分布式存储纠删码; &nbsp; 基于深度学习的信道编译码; 
-                            </li>
-                            <li>
-                                <b>Information Theory: &nbsp; </b>深度压缩感知理论及逆问题; &nbsp; 语义压缩/通信; &nbsp; 有损压缩的率失真理论;
-                            </li>
-                        </ul>
-                        <p class="font-normal" style="text-align: justify; text-decoration: underline; margin-top: 2px;">
-                            <dot></dot>Machine Learning and Deep Learning: Theory and Applications
-                        </p>
-                        <ul class="font-small" style="text-align: justify; margin-left: 24px;">
-                            <li>
-                                <b>图像/视频/深度模型压缩: &nbsp; </b>点对点/分布式通信场景下/多视角的有损/无损图像/视频语义压缩; &nbsp; 深度模型压缩；
-                            </li>
-                            <li>
-                                <b>图像/视频/多模态检索: &nbsp; </b>基于哈希/乘积量化的快速检索算法; &nbsp; 多模态/跨模态/细粒度图像/视频检索/检索增强及其应用；
-                            </li>
-                            <li>
-                                <b>AI Security: &nbsp; </b>Adversarial Machine Learning; &nbsp; AIGC and its privacy security; &nbsp; 分布式/联邦梯度压缩与隐私安全; 
-                            </li>
-                        </ul>
-                        <p class="font-normal" style="margin: 8px 0 4px 0; font-weight: bold; color: hsl(204, 64%, 36%);"><i>"Theory without Practice is empty; Practice without Theory is blind!"</i></p>
-                    </div>
-                </td>
-            </tr>
-        </table>
+<!-- 导航栏 -->
+<nav class="card">
+    <div style="height: 40px; width: 8px; margin: auto;"><img src="images/icon.png" height="100%"></div>
+    <div><a href="#">Home</a></div>
+    <div><a href="#news">News</a></div>
+    <div><a href="#publications">Publications</a></div>
+    <div><a href="#groups">Groups</a></div>
+    <div><a href="#teaching">Teaching</a></div>
+    <div><a href="#awards">Awards&Honors</a></div>
+    <div><a href="#services">Academic Services</a></div>
+</nav>
+
+<main>
+    <table>
+        <tr>
+            <td style="width: 25%;">
+                <!-- 个人照片 -->
+                <img src="images/binchen.jpg" alt="profile photo" width="100%" class="card">
+                <!-- 快速链接 -->
+                <div class="card" style="margin-top: 20px; padding: 10px; text-align: left;">
+                    <ul class="font-small">
+                        <li>
+                            <img src="images/envelope-regular.svg" style="height: 1em; vertical-align: middle; margin: 6px;">
+                            <a href="mailto:chenbin2021@hit.edu.cn">Email</a>
+                        </li>
+                        <li>
+                            <img src="images/link-solid.svg" style="height: 1em; vertical-align: middle; margin: 4px;">
+                            <a href="https://dblp.uni-trier.de/pid/22/5523-11.html">DBLP</a>
+                        </li>
+                        <li>
+                            <img src="images/graduation-cap-solid.svg" style="height: 1em; vertical-align: middle; margin: 4px;">
+                            <a href="https://scholar.google.com/citations?user=Yl0wv7AAAAAJ">Google Scholar</a>
+                        </li>
+                    </ul>
+                </div>
+            </td>
+            <td>
+                <!-- 个人介绍 -->
+                <div class="card" id="intro">
+                    <p class="font-large">Bin Chen (陈斌)</p>
+                    <p class="font-normal" style="text-align: justify;">
+                        I am currently an Assistant Professor with the Department of Computer Science and Technology, <a href="https://www.hitsz.edu.cn/index.html">Harbin Institute of Technology, Shenzhen (HITSZ).</a>
+                        I got my Ph.D. from the Department of Computer Science and Technology, <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>, under the supervision of
+                        <a href="https://scholar.google.com/citations?user=koAXTXgAAAAJ">Prof. Shu-Tao Xia </a>. I have also been fortunate to visit
+                        <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/ehyang">Prof. En-Hui Yang </a> at the University of Waterloo (UW) from Dec 2019 to May 2020.
+                        My research interests include Coding Theory and Information Theory, Machine Learning and Deep Learning.
+                    </p>
+                    <p class="font-normal" style="text-align: justify; margin-top: 8px;">
+                        <b>Research Fields</b>
+                    </p>
+                    <p class="font-normal" style="text-align: justify; text-decoration: underline; margin-top: 2px;">
+                        <dot></dot>Coding Theory and Information Theory
+                    </p>
+                    <ul class="font-small" style="text-align: justify; margin-left: 24px;">
+                        <li>
+                            <b>Coding Theory: &nbsp; </b>分布式存储纠删码; &nbsp; 基于深度学习的信道编译码;
+                        </li>
+                        <li>
+                            <b>Information Theory: &nbsp; </b>深度压缩感知理论及逆问题; &nbsp; 语义压缩/通信; &nbsp; 有损压缩的率失真理论;
+                        </li>
+                    </ul>
+                    <p class="font-normal" style="text-align: justify; text-decoration: underline; margin-top: 2px;">
+                        <dot></dot>Machine Learning and Deep Learning: Theory and Applications
+                    </p>
+                    <ul class="font-small" style="text-align: justify; margin-left: 24px;">
+                        <li>
+                            <b>图像/视频/深度模型压缩: &nbsp; </b>点对点/分布式通信场景下/多视角的有损/无损图像/视频语义压缩; &nbsp; 深度模型压缩；
+                        </li>
+                        <li>
+                            <b>图像/视频/多模态检索: &nbsp; </b>基于哈希/乘积量化的快速检索算法; &nbsp; 多模态/跨模态/细粒度图像/视频检索/检索增强及其应用；
+                        </li>
+                        <li>
+                            <b>AI Security: &nbsp; </b>Adversarial Machine Learning; &nbsp; AIGC and its privacy security; &nbsp; 分布式/联邦梯度压缩与隐私安全;
+                        </li>
+                    </ul>
+                    <p class="font-normal" style="margin: 8px 0 4px 0; font-weight: bold; color: hsl(204, 64%, 36%);"><i>"Theory without Practice is empty; Practice without Theory is blind!"</i></p>
+                </div>
+            </td>
+        </tr>
+    </table>
 
 
-        <ul id="content">
-            <!-- news -->
-            <li id="news" class="card">
-                <headline>News</headline>
-                <p class="font-normal">讲座信息, 招生信息</p>
-                <ul>
-                    <li class="font-normal">
-                        <dot></dot><b>2023-02: </b>Two papers on human activity understanding got accepted by CVPR 2023. Two papers on human activity understanding got accepted by CVPR 2023.
-                    </li>
-                    <li class="font-normal">
-                        <dot></dot><b>2023-02: </b>Two papers on human activity understanding got accepted by CVPR 2023.
-                    </li>
-                    <li class="font-normal">
-                        <dot></dot><b>2023-02: </b>Two papers on human activity understanding got accepted by CVPR 2023. <a href="https://www.tbsi.edu.cn">Tsinghua-Berkeley Shenzhen Institute.</a>
-                    </li>
-                    <li class="font-normal">
-                        <dot></dot><b>2023-02: </b>Two papers on human activity understanding got accepted by CVPR 2023.</a>
-                    </li>
-                </ul>
-            </li>
+    <ul id="content">
+        <!-- news -->
+        <li id="news" class="card">
+            <headline>News</headline>
+            <p class="font-normal">讲座信息, 招生信息</p>
+            <ul>
+                <li class="font-normal">
+                    <dot></dot><b>2023-02: </b>Two papers on human activity understanding got accepted by CVPR 2023. Two papers on human activity understanding got accepted by CVPR 2023.
+                </li>
+                <li class="font-normal">
+                    <dot></dot><b>2023-02: </b>Two papers on human activity understanding got accepted by CVPR 2023.
+                </li>
+                <li class="font-normal">
+                    <dot></dot><b>2023-02: </b>Two papers on human activity understanding got accepted by CVPR 2023. <a href="https://www.tbsi.edu.cn">Tsinghua-Berkeley Shenzhen Institute.</a>
+                </li>
+                <li class="font-normal">
+                    <dot></dot><b>2023-02: </b>Two papers on human activity understanding got accepted by CVPR 2023.</a>
+                </li>
+            </ul>
+        </li>
 
-            <!-- publications -->
-            <li id="publications" class="card">
-                <headline>Publications</headline>
-                <p class="font-normal" style="margin-left: 16px;">* Equal Contribution, # Corresponding Author, click <a href="https://scholar.google.com/citations?user=Yl0wv7AAAAAJ">here</a> for the full list.</p>
-                
-                <table class="font-small">
-                    <tr>
-                        <td style="padding:10px; width:25%;" align="center">
-                            <img style="width:100%;" src="images/PQAG.png" alt="dise">
-                        </td>
-                        <td style="padding:10px;" valign="center">
-                            <papertitle style="text-decoration: underline;">Adversarial Attack on Deep Product Quantization Network for Image Retrieval</papertitle>
-                            <br>
-                            <b>Bin Chen*</b>, Yan Feng, Tao Dai,  Shu-Tao Xia
-                            <br>
-                            <em> IEEE Transactions on Pattern Analysis and Machine Intelligence(<b>TPAMI</b>)</em>, 2022
-                            <br>
-                            <a href="https://arxiv.org/pdf/2002.11374.pdf">[arXiv]</a>
-                            <a href="https://github.com/Kira0096/PQAG/">[code]</a>
-                            <br><br>
-                            <p> We propose product quantization adversarial generation (PQ-AG), a simple yet effective method to generate adversarial examples for product quantization based retrieval systems.</p>
-                        </td>
-                    </tr>
-                </table>
+        <!-- publications -->
+        <li id="publications" class="card">
+            <headline>Publications</headline>
+            <p class="font-normal" style="margin-left: 16px;">* Equal Contribution, # Corresponding Author, click <a href="https://scholar.google.com/citations?user=Yl0wv7AAAAAJ">here</a> for the full list.</p>
 
-                <table class="font-small">
-                    <tr>
-                        <td style="padding:10px; width:25%;" align="center">
-                            <img style="width:100%;" src='images/ConMH.png' alt="dise">
-                        </td>
-                        <td style="padding:10px;" valign="center">
-                            <papertitle style="text-decoration: underline;">Contrastive Masked Autoencoders for Self-Supervised Video Hashing</papertitle>
-                            <br>
-                            Yuting Wang, Jinpeng Wang, <b>Bin Chen#</b>, Ziyun Zeng, Shu-Tao Xia
-                            <br>
-                            <em>Thirty-Seventh AAAI Conference on Artificial Intelligence(<b>AAAI</b>)</em>, 2023
-                            <br>
-                            <a href="https://arxiv.org/pdf/2211.11210v1.pdf">[arxiv]</a>
-                            <a href="https://github.com/huangmozhi9527/ConMH">[code]</a>
-                            <br><br>
-                            <p> We propose a simple yet effective one-stage SSVH method called ConMH, which incorporates video semantic information and video similarity relationship understanding in a single stage.</p>
-                        </td>
-                    </tr>	
-                </table>
+            <table class="font-small">
+                <tr>
+                    <td style="padding:10px; width:25%;" align="center">
+                        <img style="width:100%;" src="images/PQAG.png" alt="dise">
+                    </td>
+                    <td style="padding:10px;" valign="center">
+                        <papertitle style="text-decoration: underline;">Adversarial Attack on Deep Product Quantization Network for Image Retrieval</papertitle>
+                        <br>
+                        <b>Bin Chen</b>, Yan Feng, Tao Dai,  Shu-Tao Xia
+                        <br>
+                        <em> IEEE Transactions on Pattern Analysis and Machine Intelligence(<b>TPAMI</b>)</em>, 2022
+                        <br>
+                        <a href="https://arxiv.org/pdf/2002.11374.pdf">[arXiv]</a>
+                        <a href="https://github.com/Kira0096/PQAG/">[code]</a>
+                        <br><br>
+                        <p> We propose product quantization adversarial generation (PQAG), a simple yet effective method to generate adversarial examples for product quantization based retrieval systems.</p>
+                    </td>
+                </tr>
+            </table>
 
-                <table class="font-small">
-                    <tr>
-                        <td style="padding:10px; width:25%;" align="center">
-                            <img style="width:100%;" src='images/TVTS.png' alt="dise">
-                        </td>
-                        <td style="padding:10px;" valign="center">
-                            <papertitle style="text-decoration: underline;">Learning Transferable Spatiotemporal Representations from Natural Script Knowledge</papertitle>
-                            <br>
-                            Ziyun Zeng, Yuying Ge, Xihui Liu, <b>Bin Chen#</b>, Ping Luo, Shu-Tao Xia, Yixiao Ge#
-                            <br>
-                            <em>IEEE Conference on Computer Vision and Pattern Recognition(<b>CVPR</b>)</em>, 2023
-                            <br>
-                            <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Zeng_Learning_Transferable_Spatiotemporal_Representations_From_Natural_Script_Knowledge_CVPR_2023_paper.pdf">[arxiv]</a>
-                            <a href="https://github.com/TencentARC/TVTS">[code]</a>
-                            <br><br>
-                            <p>We introduce a new pretext task, Turning to Video for Transcript Sorting (TVTS), which sorts shuffled ASR scripts by attending to learned video representations.</p>
-                        </td>
-                    </tr>
-                </table>
-            </li>
+            <table class="font-small">
+                <tr>
+                    <td style="padding:10px; width:25%;" align="center">
+                        <img style="width:100%;" src='images/ConMH.png' alt="dise">
+                    </td>
+                    <td style="padding:10px;" valign="center">
+                        <papertitle style="text-decoration: underline;">Contrastive Masked Autoencoders for Self-Supervised Video Hashing</papertitle>
+                        <br>
+                        Yuting Wang, Jinpeng Wang, <b>Bin Chen#</b>, Ziyun Zeng, Shu-Tao Xia
+                        <br>
+                        <em>Thirty-Seventh AAAI Conference on Artificial Intelligence(<b>AAAI</b>)</em>, 2023
+                        <br>
+                        <a href="https://arxiv.org/pdf/2211.11210v1.pdf">[arxiv]</a>
+                        <a href="https://github.com/huangmozhi9527/ConMH">[code]</a>
+                        <br><br>
+                        <p> We propose a simple yet effective onestage SSVH method called ConMH, which incorporates video semantic information and video similarity relationship understanding in a single stage.</p>
+                    </td>
+                </tr>
+            </table>
 
-            <!-- groups -->
-            <li id="groups" class="card">
-                <headline>Groups</headline>
-                <ul>
-                    <li class="font-normal">
-                        <dot></dot><b>Compressive Sensing Group</b><br>
-                        members; intro; findings
-                    </li>
-                    <li class="font-normal">
-                        <dot></dot><b>AI Security Group</b>
-                    </li>
-                </ul>
-            </li>
+            <table class="font-small">
+                <tr>
+                    <td style="padding:10px; width:25%;" align="center">
+                        <img style="width:100%;" src='images/TVTS.png' alt="dise">
+                    </td>
+                    <td style="padding:10px;" valign="center">
+                        <papertitle style="text-decoration: underline;">Learning Transferable Spatiotemporal Representations from Natural Script Knowledge</papertitle>
+                        <br>
+                        Ziyun Zeng, Yuying Ge, Xihui Liu, <b>Bin Chen#</b>, Ping Luo, Shu-Tao Xia, Yixiao Ge#
+                        <br>
+                        <em>IEEE Conference on Computer Vision and Pattern Recognition(<b>CVPR</b>)</em>, 2023
+                        <br>
+                        <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Zeng_Learning_Transferable_Spatiotemporal_Representations_From_Natural_Script_Knowledge_CVPR_2023_paper.pdf">[CVPR]</a>
+                        <a href="https://github.com/TencentARC/TVTS">[code]</a>
+                        <br><br>
+                        <p>We introduce a new pretext task, Turning to Video for Transcript Sorting (TVTS), which sorts shuffled ASR scripts by attending to learned video representations.</p>
+                    </td>
+                </tr>
+            </table>
 
-            <!-- teaching -->
-            <li id="teaching" class="card">
-                <headline>Teaching</headline>
-                <br>本科教学
-                <br>本科生管理
-                1. 文献调研
-                2. benchmark 代码仓库
-                <ul>
-                    <li class="font-normal">
-                        <dot></dot><b>Data Mining: Theory and Algorithms</b>, Fall 2022 (with Prof. Xinlei Chen)
-                    </li>
-                </ul>
-            </li>
+            <table class="font-small">
+                <tr>
+                    <td style="padding:10px; width:25%;" align="center">
+                        <img style="width:100%;" src='images/MeCoQ.png' alt="dise">
+                    </td>
+                    <td style="padding:10px;" valign="center">
+                        <papertitle style="text-decoration: underline;">Contrastive Quantization with Code Memory for Unsupervised Image Retrieval</papertitle>
+                        <br>
+                        Jinpeng Wang, Ziyun Zeng, <b>Bin Chen#</b>, Tao Dai, Shu-Tao Xia
+                        <br>
+                        <em>Thirty-Sixth AAAI Conference on Artificial Intelligence(<b>AAAI</b>)</em>, 2022
+                        <br>
+                        <a href="https://arxiv.org/pdf/2109.05205.pdf">[arxiv]</a>
+                        <a href="https://github.com/gimpong/AAAI22-MeCoQ">[code]</a>
+                        <br><br>
+                        <p>We learn unsupervised binary descriptors by contrastive learning, which can better capture discriminative visual semantics.</p>
+                    </td>
+                </tr>
+            </table>
 
-            <!-- Awards&Honors -->
-            <li id="awards" class="card">
-                <headline>Awards&Honors</headline>
-                <p class="font-normal">
-                    <dot></dot>2022年度广东省计算机学会优秀论文二等奖;<br>  
-                    <dot></dot>2021年深圳市人工智能学会优秀博士论文 (排名第一);<br>
-                    <dot></dot>2021年中国电子学会信息论分会优秀博士论文 (年度唯一);<br>
-                    <dot></dot>清华大学计算机系优秀博士毕业生;<br>
-                    <dot></dot>清华大学博士生国家奖学金2次, 2019/2020, Top 0.3%;<br>
-                    <dot></dot>华南师范大学硕士生国家奖学金1次, 2015, Top 1%;<br>                   
-                </p>
-            </li>
+            <table class="font-small">
+                <tr>
+                    <td style="padding:10px; width:25%;" align="center">
+                        <img style="width:100%;" src='images/HCQ.png' alt="dise">
+                    </td>
+                    <td style="padding:10px;" valign="center">
+                        <papertitle style="text-decoration: underline;">Hybrid Contrastive Quantization for Efficient Cross-View Video Retrieval</papertitle>
+                        <br>
+                        Jinpeng Wang, <b>Bin Chen#</b>, Dongliang Liao#, Ziyun Zeng, Gongfu Li, Shu-Tao Xia, Jin Xu
+                        <br>
+                        <em>ACM Web Conference(<b>WWW</b>)</em>, 2022
+                        <br>
+                        <a href="https://arxiv.org/pdf/2202.03384v1.pdf">[arxiv]</a>
+                        <a href="https://github.com/gimpong/WWW22-HCQ">[code]</a>
+                        <br><br>
+                        <p>We propose the first quantized representation learning method for cross-view video retrieval,
+                            namely Hybrid Contrastive Quantization (HCQ).</p>
+                    </td>
+                </tr>
+            </table>
+        </li>
 
-            <!-- Academic Services -->
-            <li id="services" class="card">
-                <headline>Academic Services</headline>
-                <ul>
-                    <li class="font-normal">
-                        <dot></dot><b>Journal Reviewer</b><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEEE Transactions on Information Theory<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEEE Transactions on Communications<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEEE communication letter<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEEE Access<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEICE Transactions on Fundamentals of Electronics, Communications, and Computer Sciences<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEICE Transactions on Information and Systems<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Science China on Information Science<br>
-                    </li>
-                    <li class="font-normal">
-                        <dot></dot><b>Conference Reviewer / Program Committee Member</b><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020 Neural Information Processing Systems (NeurIPS20)<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017 IEEE International Symposium on Information Theory (ISIT)<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020 /2021 IEEE Data Compression Conference (DCC)<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2021  AAAI Conference on Artificial Intelligence (AAAI-21)<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2021 International Joint Conference on Artificial Intelligence (IJCAI-21)<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)<br>
-                    </li>
-                    <li class="font-normal">
-                        <dot></dot><b>AMS Mathematical Reviewer</b><br>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </main>
+        <!-- groups -->
+        <li id="groups" class="card">
+            <headline>Groups</headline>
+            <ul>
+                <li class="font-normal">
+                    <dot></dot><b>Compressive Sensing Group</b><br>
+                    members; intro; findings
+                </li>
+                <li class="font-normal">
+                    <dot></dot><b>AI Security Group</b>
+                </li>
+            </ul>
+        </li>
 
-    <footer>
+        <!-- teaching -->
+        <li id="teaching" class="card">
+            <headline>Teaching</headline>
+            <br>本科教学
+            <br>本科生管理
+            1. 文献调研
+            2. benchmark 代码仓库
+            <ul>
+                <li class="font-normal">
+                    <dot></dot><b>Data Mining: Theory and Algorithms</b>, Fall 2022 (with Prof. Xinlei Chen)
+                </li>
+            </ul>
+        </li>
 
-    </footer>
+        <!-- Awards&Honors -->
+        <li id="awards" class="card">
+            <headline>Awards&Honors</headline>
+            <p class="font-normal">
+                <dot></dot>2022年度广东省计算机学会优秀论文二等奖;<br>
+                <dot></dot>2021年深圳市人工智能学会优秀博士论文 (排名第一);<br>
+                <dot></dot>2021年中国电子学会信息论分会优秀博士论文 (年度唯一);<br>
+                <dot></dot>清华大学计算机系优秀博士毕业生;<br>
+                <dot></dot>清华大学博士生国家奖学金2次, 2019/2020, Top 0.3%;<br>
+                <dot></dot>华南师范大学硕士生国家奖学金1次, 2015, Top 1%;<br>
+            </p>
+        </li>
+
+        <!-- Academic Services -->
+        <li id="services" class="card">
+            <headline>Academic Services</headline>
+            <ul>
+                <li class="font-normal">
+                    <dot></dot><b>Journal Reviewer</b><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEEE Transactions on Information Theory<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEEE Transactions on Communications<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEEE communication letter<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEEE Access<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEICE Transactions on Fundamentals of Electronics, Communications, and Computer Sciences<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEICE Transactions on Information and Systems<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Science China on Information Science<br>
+                </li>
+                <li class="font-normal">
+                    <dot></dot><b>Conference Reviewer / Program Committee Member</b><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020 Neural Information Processing Systems (NeurIPS20)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017 IEEE International Symposium on Information Theory (ISIT)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020 /2021 IEEE Data Compression Conference (DCC)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2021  AAAI Conference on Artificial Intelligence (AAAI-21)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2021 International Joint Conference on Artificial Intelligence (IJCAI-21)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)<br>
+                </li>
+                <li class="font-normal">
+                    <dot></dot><b>AMS Mathematical Reviewer</b><br>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</main>
+
+<footer>
+    <!-- 网页脚注信息: 待补充 -->
+</footer>
 </body>
 
 </html>
