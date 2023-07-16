@@ -36,9 +36,9 @@
         
         .card{
             border-radius: 8px;
-            background-color: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(2px);
-            box-shadow: 4px 4px 6px 0 rgba(78, 96, 108, 0.6);
+            background-color: rgba(255, 255, 255, 0.6);
+            /* backdrop-filter: blur(2px); */
+            box-shadow: 4px 4px 6px 0 rgba(78, 96, 108, 0.5);
             border: 1px black solid;
         }
 
@@ -103,7 +103,7 @@
             /* letter-spacing: 1px; */
         }
         .font-large, headline{
-            line-height: 64px;
+            line-height: 50px;
             font-size: 32px;
             font-weight: bold;
             letter-spacing: 1px;
@@ -117,7 +117,7 @@
         table{
             border-collapse: collapse;
             border: 0px;
-            margin-top: 85px;
+            margin-top: 70px;
             /* vertical-align: middle; */
             text-align: center;
         }
@@ -154,10 +154,11 @@
         <img src="images/logo中英组合-白.png" height="100%">
     </div> -->
     <div style="position: fixed; top: 0; left: 0; right: 0; margin: 0 auto; width: 1020px; height: 100%; text-align: center; background-color: white; z-index: -1;">
-        <table style="width: 100%;margin-top: 0;">
+        <table style="width: 100%; margin-top: 0;">
             <tr>
                 <td>
-                    <img src="images/hitsz-logo.jpg" width="100%">
+                    <img src="images/hitsz-logo.jpg" width="1020px" style="float: left;">
+                    <div style="background-color: rgba(255, 255, 255, 0.8); width: 100%; height: 100%; position: absolute"></div>   <!-- 蒙板 -->
                 </td>
             </tr>
         </table>
@@ -165,24 +166,24 @@
     
     <!-- 导航栏 -->
     <nav class="card">
-        <div style="height: 40px; width: 8px; margin: auto;"><img src="images/icon.png" height="100%"></div>
+        <div style="height: 40px; width: 64px; margin: auto; flex-grow: 0; text-align:center; border-right: rgb(30, 81, 162) solid 1px"><img src="images/icon.png" height="100%"></div>
         <div><a href="#">Home</a></div>
         <div><a href="#news">News</a></div>
         <div><a href="#publications">Publications</a></div>
-        <div><a href="#groups">Groups</a></div>
+        <div><a href="#groups">Research Groups</a></div>
         <div><a href="#teaching">Teaching</a></div>
-        <div><a href="#awards">Awards&Honors</a></div>      
+        <!-- <div><a href="#awards">Awards&Honors</a></div> -->
         <div><a href="#services">Academic Services</a></div>
     </nav>
 
     <main>
         <table>
             <tr>
-                <td style="width: 25%;">
+                <td style="width: 22%;">
                     <!-- 个人照片 -->
                     <img src="images/binchen.jpg" alt="profile photo" width="100%" class="card">
                     <!-- 快速链接 -->
-                    <div class="card" style="margin-top: 20px; padding: 10px; text-align: left;">
+                    <div class="card" style="margin-top: 10px; padding: 10px; text-align: left;">
                         <ul class="font-small">
                             <li>
                                 <img src="images/envelope-regular.svg" style="height: 1em; vertical-align: middle; margin: 6px;">
@@ -210,35 +211,39 @@
                             <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/ehyang">Prof. En-Hui Yang </a> at the University of Waterloo (UW) from Dec 2019 to May 2020.
                             My research interests include Coding Theory and Information Theory, Machine Learning and Deep Learning.
                         </p>
-                        <p class="font-normal" style="text-align: justify; margin-top: 8px;">
-                            <b>Research Fields</b>
+                        <p class="font-normal" style="text-align: justify; margin-top: 8px; text-decoration: underline; color: hsl(204, 64%, 36%);">
+                            <i><b>Research Fields</b></i>
                         </p>
-                        <p class="font-normal" style="text-align: justify; text-decoration: underline; margin-top: 2px;">
-                            <dot></dot>Coding Theory and Information Theory
-                        </p>
-                        <ul class="font-small" style="text-align: justify; margin-left: 24px;">
-                            <li>
-                                <b>Coding Theory: &nbsp; </b>Erasure Codes in Distributed Storage Systems; &nbsp; Deep Learning Based Channel Coding; 
-                            </li>
-                            <li>
-                                <b>Information Theory: &nbsp; </b>Deep Compressive Sensing and Inversion Problem; &nbsp; Semantic Communication and Compression; &nbsp; Rate-Distortion Theory for Lossy Compression;
-                            </li>
-                        </ul>
-                        <p class="font-normal" style="text-align: justify; text-decoration: underline; margin-top: 2px;">
-                            <dot></dot>Machine Learning and Deep Learning: Theory and Applications
+                        <p class="font-normal" style="text-align: justify; margin-top: 2px;">
+                            <dot></dot><b>Coding Theory and Information Theory</b>
                         </p>
                         <ul class="font-small" style="text-align: justify; margin-left: 24px;">
-                            <li>
-                                <b>Data Compression:  &nbsp; </b> Point-to-Point Images/Videos/3D Point Clouds Compression; &nbsp; Dirtributed/Multi-View Lossless/Lossy Compression;
-                            </li>
-                            <li>
-                                <b>Images/Videos/Cross-Modal Retrieval: &nbsp; </b>Hashing/Quantization based Retrieval; &nbsp; Retrieval-Augmentation and its Applications；
-                            </li>
-                            <li>
-                                <b>AI Security: &nbsp; </b>Adversarial Machine Learning; &nbsp; AIGC and its privacy security; &nbsp; Privacy in Distributed/Federated Learning; 
-                            </li>
+                            <b>Coding Theory:</b>
+                            <li style="margin-left: 24px;">Erasure Codes in Distributed Storage Systems;</li>
+                            <li style="margin-left: 24px;">Deep Learning Based Channel Coding;</li>
+                            <b>Information Theory:</b>
+                            <li style="margin-left: 24px;">Deep Compressive Sensing and Inversion Problem;</li>
+                            <li style="margin-left: 24px;">Semantic Communication and Compression;</li>
+                            <li style="margin-left: 24px;">Rate-Distortion Theory for Lossy Compression;</li>
                         </ul>
-                        <p class="font-normal" style="margin: 8px 0 4px 0; font-weight: bold; color: hsl(204, 64%, 36%);"><i>"Theory without Practice is empty; &nbsp; Practice without Theory is blind!"</i></p>
+                        <p class="font-normal" style="text-align: justify; margin-top: 2px;">
+                            <dot></dot><b>Machine Learning and Deep Learning: Theory and Applications</b>
+                        </p>
+                        <ul class="font-small" style="text-align: justify; margin-left: 24px;">
+                            <b>Data Compression:</b>
+                            <li style="margin-left: 24px;">Point-to-Point Images/Videos/3D Point Clouds Compression;</li>
+                            <li style="margin-left: 24px;">Dirtributed/Multi-View Lossless/Lossy Compression;</li>
+                            <b>Images/Videos/Cross-Modal Retrieval:</b>
+                            <li style="margin-left: 24px;">Hashing/Quantization based Retrieval;</li>
+                            <li style="margin-left: 24px;">Retrieval-Augmentation and its Applications;</li>
+                            <b>AI Security:</b>
+                            <li style="margin-left: 24px;">Adversarial Machine Learning;</li>
+                            <li style="margin-left: 24px;">AIGC and its privacy security;</li>
+                            <li style="margin-left: 24px;">Privacy in Distributed/Federated Learning;</li>
+                        </ul>
+                        <p class="font-normal" style="margin: 8px 0 4px 0; font-weight: bold; color: hsl(204, 64%, 36%); text-decoration: underline;">
+                            <i>"Theory without Practice is empty; &nbsp; Practice without Theory is blind!"</i>
+                        </p>
                     </div>
                 </td>
             </tr>
@@ -250,23 +255,21 @@
             <li id="news" class="card">
                 <headline>News</headline>
                 <p class="font-normal" style="color: red;"><b>[施工中...]</b></p>
-                <p class="font-normal">讲座信息, 招生信息 </p>
+                <p class="font-normal">讲座信息, 招生信息, 论文发表信息</p>
                 <ul>
                     <li class="font-normal">
-                        <dot></dot><b>2023-07: </b>Two papers got accepted by ICCV 2023. Congrats to Hao Fang and Yaohua!
-                    </li>
-                    <li class="font-normal">
-                        <dot></dot><b>2023-02: </b>Two papers on human activity understanding got accepted by CVPR 2023. <a href="https://www.tbsi.edu.cn">Tsinghua-Berkeley Shenzhen Institute.</a>
+                        <dot></dot><b>2023-07: &nbsp;</b> <b>Two</b> papers got accepted by <b>ICCV 2023</b>. Congrats to Hao Fang and Yaohua Zha!
                     </li>
                 </ul>
             </li>
 
             <!-- publications -->
             <li id="publications" class="card">
-                <headline>Publications</headline>
+                <headline>Publications</headline> &nbsp; <b>[</b><a href="https://dblp.uni-trier.de/pid/22/5523-11.html" class="font-normal">&nbsp;ALL&nbsp;</a><b>]</b>
                 <p class="font-normal" style="color: red;"><b>[施工中...(待补充)]</b></p>
-                <p class="font-normal" style="margin-left: 16px;">* Equal Contribution, # Corresponding Author, click <a href="https://scholar.google.com/citations?user=Yl0wv7AAAAAJ">here</a> for the full list.</p>
+                <p class="font-normal" style="margin-left: 16px;">(* Equal Contribution and # Corresponding Author)</p>
 
+                <p class="font-normal"><dot></dot><b>Journal Papers</b></p>     <!-- 期刊论文列表 -->
                 <table class="font-small">
                     <tr>
                         <td style="padding:10px; width:25%;" align="center">
@@ -287,6 +290,7 @@
                     </tr>
                 </table>
 
+                <p class="font-normal"><dot></dot><b>Conference Papers</b></p>  <!-- 会议论文列表 -->
                 <table class="font-small">
                     <tr>
                         <td style="padding:10px; width:25%;" align="center">
@@ -435,26 +439,25 @@
                 <ul>
                     <li class="font-normal">
                         <dot></dot><b>Data Compression and Channel Coding Group</b><br>
-                        members; intro; findings
+                        <p style="margin-left: 24px;">[details coming soon ...]</p>
                     </li>
                     <li class="font-normal">
                         <dot></dot><b>AI Security Group</b>
+                        <p style="margin-left: 24px;">[details coming soon ...]</p>
                     </li>
                    <li class="font-normal">
                         <dot></dot><b>Data Retrieval Group</b>
+                        <p style="margin-left: 24px;">[details coming soon ...]</p>
                     </li>
                 </ul>
-              <p class="font-normal" style="margin: 8px 0 4px 0; font-weight: bold; color: hsl(204, 64%, 36%);"><i>We are always actively recruiting highly motivated students and Interns. For Prospective applicants, please send email to: chenbin2021@hit.edu.cn</i></p>
+                <p class="font-normal" style="margin: 8px 0 4px 0; font-weight: bold; color: hsl(204, 64%, 36%);">
+                    <i>We are always actively recruiting highly motivated students and Interns. For Prospective applicants, please send email to: chenbin2021@hit.edu.cn</i>
+                </p>
             </li>
 
             <!-- teaching -->
             <li id="teaching" class="card">
                 <headline>Teaching</headline>
-                <p class="font-normal" style="color: red;"><b>[施工中...]</b></p>
-                <br>本科教学
-                <br>本科生管理
-                1. 文献调研
-                2. benchmark 代码仓库
                 <ul>
                     <li class="font-normal">
                         <dot></dot><b>Set Theory and Graph Theory</b>, Fall 2022/2023 
@@ -466,6 +469,7 @@
             </li>
 
             <!-- Awards&Honors -->
+            <!--
             <li id="awards" class="card">
                 <headline>Awards&Honors</headline>
                 <p class="font-normal" style="color: red;"><b>[施工中...(待翻译)]</b></p>
@@ -478,33 +482,36 @@
                     <dot></dot>华南师范大学硕士生国家奖学金1次, 2015, Top 1%;<br>                   
                 </p>
             </li>
+            -->
 
             <!-- Academic Services -->
             <li id="services" class="card">
                 <headline>Academic Services</headline>
-                <ul>
-                    <li class="font-normal">
-                        <dot></dot><b>Journal Reviewer</b><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEEE Transactions on Information Theory<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEEE Transactions on Communications<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEEE communication letter<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEEE Access<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEICE Transactions on Fundamentals of Electronics, Communications, and Computer Sciences<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEICE Transactions on Information and Systems<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Science China on Information Science<br>
-                    </li>
-                    <li class="font-normal">
-                        <dot></dot><b>Conference Reviewer / Program Committee Member</b><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020 Neural Information Processing Systems (NeurIPS20)<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017 IEEE International Symposium on Information Theory (ISIT)<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020 /2021 IEEE Data Compression Conference (DCC)<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2021  AAAI Conference on Artificial Intelligence (AAAI-21)<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2021 International Joint Conference on Artificial Intelligence (IJCAI-21)<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)<br>
-                    </li>
-                    <li class="font-normal">
-                        <dot></dot><b>AMS Mathematical Reviewer</b><br>
-                    </li>
+
+                <p class="font-normal"><dot></dot><b>Journal Reviewer</b></p>
+                <ul class="font-normal">
+                    <li style="margin-left: 24px;">IEEE Transactions on Information Theory</li>
+                    <li style="margin-left: 24px;">IEEE Transactions on Communications</li>
+                    <li style="margin-left: 24px;">IEEE communication letter</li>
+                    <li style="margin-left: 24px;">IEEE Access</li>
+                    <li style="margin-left: 24px;">IEICE Transactions on Fundamentals of Electronics, Communications, and Computer Sciences</li>
+                    <li style="margin-left: 24px;">IEICE Transactions on Information and Systems</li>
+                    <li style="margin-left: 24px;">Science China on Information Science</li>
+                </ul>
+                
+                <p class="font-normal"><dot></dot><b>Conference Reviewer / Program Committee Member</b><br></p>
+                <ul class="font-normal">
+                    <li style="margin-left: 24px;">2020 Neural Information Processing Systems (NeurIPS20)</li>
+                    <li style="margin-left: 24px;">2017 IEEE International Symposium on Information Theory (ISIT)</li>
+                    <li style="margin-left: 24px;">2020 /2021 IEEE Data Compression Conference (DCC)</li>
+                    <li style="margin-left: 24px;">2021  AAAI Conference on Artificial Intelligence (AAAI-21)</li>
+                    <li style="margin-left: 24px;">2021 International Joint Conference on Artificial Intelligence (IJCAI-21)</li>
+                    <li style="margin-left: 24px;">2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</li>
+                </ul>
+
+                <p class="font-normal"><dot></dot><b>AMS Mathematical Reviewer</b><br></p>
+                <ul class="font-normal">
+                    <li style="margin-left: 24px;"></li>
                 </ul>
             </li>
         </ul>
