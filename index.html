@@ -1,0 +1,1025 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Bin Chen (陈斌)</title>
+  
+  <meta name="author" content="Bin Chen">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.css">
+  <link rel="icon" type="image/png" href="images/icon.png">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        a {
+            color: hsl(204, 64%, 36%);
+            text-decoration: none;
+        }
+        a:focus,
+        a:hover {
+            background-color: #4e606c;
+            color: white;
+        }
+
+        body{
+            background: linear-gradient(to bottom, rgba(205, 226, 233,0.15) 0%, rgba(78, 96, 108,0.15) 100%), radial-gradient(at top center, rgba(205, 226, 233,0.40) 0%, rgba(78, 96, 108,0.40) 120%) #7993a2;
+            background-blend-mode: multiply,multiply;
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            min-width: 1040px;
+        }
+        
+        .card{
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.6);
+            /* backdrop-filter: blur(2px); */
+            box-shadow: 4px 4px 6px 0 rgba(78, 96, 108, 0.5);
+            border: 1px black solid;
+        }
+
+        dot{
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #4e606c;
+            display: inline-block;
+            margin: 2px 8px;
+        }
+        
+        nav{
+            width: 1000px;
+            /* height: 48px; */
+            margin: 0 auto;
+            position: fixed;
+                left: 0;
+                right: 0;
+                top: 5px;
+            z-index: 10;
+
+            line-height: 48px;
+            display: flex;
+            overflow: hidden;
+            /* background-color: hsl(204, 32%, 36%) !important; */
+            /* border: 0 !important; */
+            box-shadow: 0 0 8px 2px rgba(78, 96, 108, 0.8) !important;
+            background-color: white !important;
+            border: hsl(204, 40%, 36%) 1px solid !important;
+        }
+        nav>div{
+            flex-grow: 1;   /* 设置增长系数 */
+        }
+        nav a{
+            text-decoration: none;
+            display: block;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 6px;
+            /* color: white; */
+            /* border: hsl(204, 40%, 36%) 1px solid; */
+        }
+        nav a:hover, a:focus{
+            background-color: hsl(204, 40%, 36%);
+            color: white;
+        }
+
+        main{
+            width: 940px;
+            margin: auto;
+        }
+
+        .font-small, .font-small *{
+            line-height: 22px;
+            font-size: 16px;
+        }
+        .font-normal, .font-normal *{
+            line-height: 24px;
+            font-size: 18px;
+            /* letter-spacing: 1px; */
+        }
+        .font-large, headline{
+            line-height: 50px;
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        headline{
+            text-decoration: underline; 
+            color: hsl(204, 64%, 36%); 
+            font-style: italic;
+        }
+
+        table{
+            border-collapse: collapse;
+            border: 0px;
+            /* vertical-align: middle; */
+            text-align: center;
+        }
+        /* td{
+            border: 5px solid;
+        } */
+
+        #intro{
+            margin: auto 0 auto 20px;
+            padding: 10px;
+        }
+
+        #intro .font-normal, #intro>.font-normal>a, #intro span{
+            line-height: 24px;
+            font-size: 20px;
+            font-family: 'Times New Roman';
+        }
+
+        #content>li{
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        #publications table{
+            width: 96%;
+            margin: 10px auto;
+            border-radius: 8px;
+            background-color: rgba(205, 226, 233, 0.4);
+            text-align: left;
+        }
+        #publications table:hover{
+            background-color: rgba(33, 104, 151, 0.2);
+        }
+  </style>
+</head>
+
+<body>
+    <!-- 背景图 -->
+    <!-- <div style="position: fixed; top: 50%; left: 50%; margin-top: -540px; margin-left: -570px; height: 1200px; width: 1000px; overflow: hidden;">
+        <img src="images/logo中英组合-白.png" height="100%">
+    </div> -->
+    <div style="position: fixed; top: 0; left: 0; right: 0; margin: 0 auto; width: 1020px; height: 100%; text-align: center; background-color: white; z-index: -1;">
+        <table style="width: 100%; margin-top: 0;">
+            <tr>
+                <td>
+                    <img src="images/hitsz-logo.jpg" width="1020px" style="float: left;">
+                    <div style="background-color: rgba(255, 255, 255, 0.8); width: 100%; height: 100%; position: absolute"></div>   <!-- 蒙板 -->
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <!-- 导航栏 -->
+    <nav class="card">
+        <div style="height: 40px; width: 64px; margin: auto; flex-grow: 0; text-align:center; border-right: rgb(30, 81, 162) solid 1px"><img src="images/icon.png" height="100%"></div>
+        <div><a href="#">Home</a></div>
+        <div><a href="#news">News</a></div>
+        <div><a href="#publications">Publications</a></div>
+        <div><a href="#groups">Research Groups</a></div>
+        <div><a href="#teaching">Teaching</a></div>
+        <!-- <div><a href="#awards">Awards&Honors</a></div> -->
+        <div><a href="#services">Academic Services</a></div>
+    </nav>
+
+    <main>
+        <table style="background-color: rgba(255, 255, 255, 0.7); margin-top: 70px;">
+            <tr>
+                <td style="width: 16%;">
+                    <!-- 个人照片 -->
+                    <img src="images/binchen.jpg" alt="profile photo" width="100%" class="card">
+                </td>
+                <td>
+                    <!-- 个人介绍 -->
+                    <div id="intro">
+                        <p class="font-large" style="text-align: left; font-family: 'Times New Roman';">Bin Chen (陈斌)</p><br>
+                        <p class="font-normal" style="text-align: justify;">
+                            I am currently an <span style="color: hsl(204, 64%, 36%)">Associate Professor & PhD Advisor</span> with the Department of Computer Science and Technology, <a href="https://www.hitsz.edu.cn/index.html">Harbin Institute of Technology, Shenzhen (HITSZ).</a> 
+                            I got my Ph.D. from the Department of Computer Science and Technology, <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>, under the supervision of 
+                            <a href="https://scholar.google.com/citations?user=koAXTXgAAAAJ">Prof. Shu-Tao Xia</a>. I have also been fortunate to visit 
+                            <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/ehyang">Prof. En-Hui Yang </a> at the University of Waterloo (UW) from Dec 2019 to May 2020.
+                            My research interests include Coding Theory and Information Theory, Machine Learning and Deep Learning.
+                        </p>
+                        <!-- 快速链接 -->
+                        <p class="font-small" style="text-align: right; margin-top: 6px;">
+                            <img src="images/envelope-regular.svg" style="height: 1em; vertical-align: middle; margin: 6px;">
+                            <a href="mailto:chenbin2021@hit.edu.cn" style="margin-right: 10px;">Email</a>
+
+                            <img src="images/link-solid.svg" style="height: 1em; vertical-align: middle; margin: 4px;">
+                            <a href="https://dblp.uni-trier.de/pid/22/5523-11.html" style="margin-right: 10px;">DBLP</a>
+
+                            <img src="images/graduation-cap-solid.svg" style="height: 1em; vertical-align: middle; margin: 4px;">
+                            <a href="https://scholar.google.com/citations?user=Yl0wv7AAAAAJ">Google Scholar</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+        <table style="background-color: rgba(255, 255, 255, 0.7);">
+            <tr>
+                <td>
+                    <p style="text-align: justify; text-decoration: underline; font-family: 'Times New Roman'; font-size: 24px; margin-bottom: 6px;">
+                        <b>Research Fields</b>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 54%; vertical-align: top; line-height: 24px;">
+                    <p style="text-align: justify; margin-top: 2px; font-family: 'Times New Roman'; font-size: 20px;">
+                        <dot></dot><b>Deep Learning and its Applications</b>
+                    </p>
+                    <ul style="text-align: justify; margin-left: 24px; font-family: 'Times New Roman'; font-size: 18px; margin-right: 12px;">
+                        <b>Data Compression:</b>
+                        <li style="margin-left: 12px;"># Point-to-Point Images/Videos/3D Point Clouds Compression;</li>
+                        <li style="margin-left: 12px;"># Dirtributed/Multi-View Lossless/Lossy Compression;</li>
+                        <b>Images/Videos/Cross-Modal Retrieval:</b>
+                        <li style="margin-left: 12px;"># Hashing/Quantization based Retrieval;</li>
+                        <li style="margin-left: 12px;"># Retrieval-Augmentation and its Applications;</li>
+                        <b>AI Security:</b>
+                        <li style="margin-left: 12px;"># Adversarial Machine Learning;</li>
+                        <li style="margin-left: 12px;"># Privacy and Security in Distributed/Federated Learning, AIGC and Foundation Models;</li>
+                    </ul>
+                </td>
+                <td style="width: 0%; border: 1px black dashed;">
+                </td>
+                <td style="vertical-align: top; line-height: 24px;">
+                    <p style="text-align: justify; margin-top: 2px; font-family: 'Times New Roman'; font-size: 20px;">
+                        <dot></dot><b>Coding Theory and Information Theory</b>
+                    </p>
+                    <ul style="text-align: justify; margin-left: 24px; font-family: 'Times New Roman'; font-size: 18px;">
+                        <b>Coding Theory:</b>
+                        <li style="margin-left: 12px;"># Erasure Codes in Distributed Storage Systems;</li>
+                        <li style="margin-left: 12px;"># Deep Learning Based Channel Coding;</li>
+                        <b>Information Theory:</b>
+                        <li style="margin-left: 12px;"># Deep Compressive Sensing and Inverse Problem;</li>
+                        <li style="margin-left: 12px;"># Semantic Communication and Compression;</li>
+                        <li style="margin-left: 12px;"># Rate-Distortion Theory for Lossy Compression;</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <p style="text-align: justify; margin-top: 8px; color: hsl(204, 64%, 36%); font-size: 18px; font-family: 'Times New Roman';"><b>
+                        We are always actively recruiting highly motivated students and research interns. 
+                        For prospective applicants, please send your CV to: <a href="mailto:chenbin2021@hit.edu.cn" style="text-decoration: underline; font-size: 18px; font-family: 'Times New Roman';"> chenbin2021@hit.edu.cn</a>
+                    </b></p>
+                </td>
+        </table>
+
+
+        <ul id="content">
+            <!-- news -->
+            <li id="news" class="card">
+                <headline>News</headline>
+                <!-- 
+                <p class="font-normal" style="color: red;"><b>[施工中...]</b></p>
+                <p class="font-normal">讲座信息, 招生信息, 论文发表信息</p>
+                -->
+                <ul>
+                    <li class="font-normal">
+                        <dot></dot><b>2024-07: &nbsp;</b> Yixiang Qiu and Wenbo Yu were awarded the title of Outstanding Undergraduate Graduation Design (Thesis) of HITSZ (<b>3%</b>).
+                    </li>
+                    <li class="font-normal">
+                        <dot></dot><b>2024-07: &nbsp;</b> Yixiang Qiu's undergraduate paper has been included in <b>ECCV-24</b>(CCF B, TsinghuaCS:A).
+                    </li>
+                    <li class="font-normal">
+                        <dot></dot><b>2023-07: &nbsp;</b> <b>Two</b> papers got accepted by <b>ICCV 2023</b>. Congrats to Hao Fang and Yaohua Zha!
+                    </li>
+                </ul>
+            </li>
+
+            <!-- publications -->
+            <li id="publications" class="card">
+                <headline>Selected Publications</headline> &nbsp; <b>[</b><a href="https://dblp.uni-trier.de/pid/22/5523-11.html" class="font-normal">&nbsp;ALL&nbsp;</a><b>]</b>
+                <p class="font-normal" style="margin-left: 16px;">(* Equal Contribution and # Corresponding Author)</p>
+
+                <!-- 期刊论文列表 -->
+                <p class="font-normal"><dot></dot><b>Journal Papers</b></p>
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src="images/PQAG.png">
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">Adversarial Attack on Deep Product Quantization Network for Image Retrieval</papertitle>
+                            <br>
+                            <b>Bin Chen</b>, Yan Feng, Tao Dai, Jiawang Bai, Yong Jiang,Shu-Tao Xia, Xuan Wang
+                            <br>
+                            <em> IEEE Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI</b>)</em>, 2022
+                            <br>
+                            <a href="https://arxiv.org/pdf/2002.11374.pdf">[arxiv]</a>
+                            <a href="https://github.com/Kira0096/PQAG/">[code]</a>
+                            <br><br>
+                            <p> We propose product quantization adversarial generation (PQAG), a simple yet effective method to generate adversarial examples for product quantization based retrieval systems.</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src="images/IBSOC.png">
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">Improved Bounds and Singleton-Optimal
+                                Constructions of Locally Repairable Codes
+                                With Minimum Distance 5 and 6</papertitle>
+                            <br>
+                            <b>Bin Chen</b>, Weijun Fang, Shu-Tao Xia, Jie Hao, Fang-Wei Fu
+                            <br>
+                            <em> IEEE Transactions on Information Theory (<b>TIT</b>)</em>, 2021
+                            <br>
+                            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9249020">[TIT]</a>
+                            <br><br>
+                            <p> We obtain a complete characterization for Singlet-optimal LRCs with r = 2 and d = 6.</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src="images/COOC.png">
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">Constructions of Optimal Cyclic (r, δ) Locally
+                                Repairable Codes</papertitle>
+                            <br>
+                            <b>Bin Chen</b>, Shu-Tao Xia, Jie Hao, Fang-Wei Fu
+                            <br>
+                            <em> IEEE Transactions on Information Theory (<b>TIT</b>)</em>, 2018
+                            <br>
+                            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8063357">[TIT]</a>
+                            <br><br>
+                            <p> We construct a new class of optimal q-ary cyclic r-local LRCs
+                                with lengths n | q + 1 and a new class of optimal q-ary cyclic
+                                (r, δ)-LRCs (δ ≥ 2) with lengths n | q + 1.</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src="images/BaCoLRC.png">
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">Bounds and Constructions of Locally Repairable
+                                Codes: Parity-Check Matrix Approach</papertitle>
+                            <br>
+                            Jie Hao, Shu-Tao Xia, Kenneth Shum, <b>Bin Chen</b>, Fang-Wei Fu, Yixian Yang
+                            <br>
+                            <em> IEEE Transactions on Information Theory (<b>TIT</b>)</em>, 2020
+                            <br>
+                            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9186658">[TIT]</a>
+                            <br><br>
+                            <p> We give an alternate proof of the Singleton-like
+                                bound for LRCs first proved by Gopalan et al. Some structural
+                                properties on optimal LRCs that achieve the Singleton-like bound
+                                are given.</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src="images/DIPBDAAE.jpg">
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">Deep image prior based defense against adversarial examples</papertitle>
+                            <br>
+                            Tao Dai, Yan Feng, <b>Bin Chen#</b>, Jian Lu, Shu-Tao Xia
+                            <br>
+                            <em> Pattern Recognition (<b>PR</b>)</em>, 2022
+                            <br>
+                            <a href="https://www.sciencedirect.com/science/article/pii/S0031320321004295?via%3Dihub">[PR]</a>
+                            <br><br>
+                            <p> We develop an adaptive stopping strategy that adapts our method to diverse images. </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src="images/Ppavdlvuah.jpg">
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">Practical protection against video data leakage via universal adversarial head</papertitle>
+                            <br>
+                            Jiawang Bai, <b>Bin Chen#</b>, Kuofeng Gao, Xuan Wang, Shu-Tao Xia
+                            <br>
+                            <em> Pattern Recognition (<b>PR</b>)</em>, 2022
+                            <br>
+                            <a href="https://www.sciencedirect.com/science/article/pii/S0031320322003156">[PR]</a>
+                            <br><br>
+                            <p> We propose universal adversarial head (UAH), which crafts adversarial query videos by prepending the original videos with a sequence of adversarial frames to perturb the normal hash codes in the Hamming space. </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src="images/CoOLRC.png">
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">Constructions of Optimal (r, δ) Locally Repairable
+                                Codes via Constacyclic Codes</papertitle>
+                            <br>
+                            <b>Bin Chen</b>, Weijun Fang, Shu-Tao Xia, Fang-Wei Fu
+                            <br>
+                            <em> IEEE Transactions on Communication (<b>TCOM</b>)</em>, 2019
+                            <br>
+                            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8712389">[TCOM]</a>
+                            <br><br>
+                            <p>we have completely obtained all optimal
+                                (r, δ)-LRCs with length n | (q + 1) and (r + δ - 1) | n
+                                for all possible parameters for the completeness in the coding
+                                theory. </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src="images/PLRC.png">
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">Perfect LRCs and k-optimal LRCs</papertitle>
+                            <br>
+                            Weijun Fang, <b>Bin Chen#</b>, Shu-Tao Xia, Fang-Wei Fu, Xiangyu Chen
+                            <br>
+                            <em> Designs, Codes and Cryptography (<b>DCC</b>)</em>, 2022
+                            <br>
+                            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9173958">[DCC]</a>
+                            <br><br>
+                            <p>We establish important connections of the existence of LRCs with
+                                finite geometry and finite fields, and two systematic constructions
+                                of perfect LRCs are obtained. </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src="images/MRPQ.jpg">
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">Mean-removed product quantization for large-scale image retrieval</papertitle>
+                            <br>
+                            Jiacheng Yang*, <b>Bin Chen* #</b>, Shu-Tao Xia
+                            <br>
+                            <em> Neurocomputing (<b>Neurocomputing</b>)</em>, 2020
+                            <br>
+                            <a href="https://www.sciencedirect.com/science/article/pii/S0925231220305919">[Neurocomputing]</a>
+                            <br><br>
+                            <p>We develop a novel method to solve the unbalanced variance problem combined with PQ and optimized product quantization (OPQ), called Mean-Removed Product Quantization (MRPQ) for the actual scenario. </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- 会议论文列表 -->
+                <p class="font-normal"><dot></dot><b>Conference Papers</b></p> 
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src='images/ECCV24-IF-GMI.jpeg'>
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">A Closer Look at GAN Priors: Exploiting Intermediate Features for Enhanced Model Inversion Attacks</papertitle>
+                            <br>
+                            Yixiang Qiu, Hao Fang, Hongyu Yu, <b>Bin Chen#</b>, Meikang Qiu, Shu-Tao Xia
+                            <br>
+                            <em>European Conference on Computer Vision(<b>ECCV</b>)</em>, 2024
+                            <br>
+                            <a href="https://arxiv.org/abs/2407.13863">[arXiv]</a>
+                            <a href="https://github.com/final-solution/IF-GMI">[code]</a>
+                            <br><br>
+                            <p>Previous Model Inversion attacks have solely disclosed private information in the latent space of GAN priors, limiting their semantic extraction and transferability. 
+                                Thus we propose Intermediate Features enhanced Generative Model Inversion (IF-GMI), which disassembles the GAN structure and exploits features between intermediate blocks.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src='images/ECCV24-CGNC.png'>
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">CLIP-Guided Generative Networks for Transferable Targeted Adversarial Attacks</papertitle>
+                            <br>
+                            Hao Fang, Jiawei Kong, <b>Bin Chen#</b>, Tao Dai, Hao Wu, Shu-Tao Xia
+                            <br>
+                            <em>European Conference on Computer Vision(<b>ECCV</b>)</em>, 2024
+                            <br>
+                            <a href="https://arxiv.org/abs/2407.10179">[arXiv]</a>
+                            <a href="https://github.com/ffhibnese/CGNC_Targeted_Adversarial_Attacks">[code]</a>
+                            <br><br>
+                            <p>The generative adversarial attacks use class labels as conditions, failing to leverage the semantic information. Thus, we propose 
+                                CLIP-guided Generative Network with Cross-attention (CGNC) to enhance multi-target attacks by using textual knowledge of CLIP.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src='images/AAAI24-GMMFormer.png'>
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">GMMFormer: Gaussian-Mixture-Model Based Transformer for Efficient Partially Relevant Video Retrieval</papertitle>
+                            <br>
+                            Yuting Wang, Jinpeng Wang, <b>Bin Chen#</b>, Ziyun Zeng, Shu-Tao Xia
+                            <br>
+                            <em>Thirty-Seventh AAAI Conference on Artificial Intelligence(<b>AAAI</b>)</em>, 2024
+                            <br>
+                            <a href="https://ojs.aaai.org/index.php/AAAI/article/view/28389">[AAAI]</a>
+                            <a href="https://github.com/huangmozhi9527/GMMFormer">[code]</a>
+                            <br><br>
+                            <p>To solve the efficiency problem of Partially Relevant Video Retrieval (PRVR) methods, we proposes GMMFormer, 
+                                a Gaussian-Mixture-Model based Transformer which models clip representations implicitly.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src='images/AAAI24-PointFEMAE.png'>
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">Towards Compact 3D Representations via Point Feature Enhancement Masked Autoencoders</papertitle>
+                            <br>
+                            Yaohua Zha, Huizhen Ji, Jinmin Li, Rongsheng Li, Tao Dai, <b>Bin Chen</b>, Zhi Wang, Shu-Tao Xia
+                            <br>
+                            <em>Thirty-Seventh AAAI Conference on Artificial Intelligence(<b>AAAI</b>)</em>, 2024
+                            <br>
+                            <a href="https://ojs.aaai.org/index.php/AAAI/article/view/28522">[AAAI]</a>
+                            <a href="https://github.com/zyh16143998882/AAAI24-PointFEMAE">[code]</a>
+                            <br><br>
+                            <p> To learn compact 3D representations, we propose a simple yet effective Point Feature Enhancement Masked Autoencoders (Point-FEMAE), 
+                                which mainly consists of a global branch and a local branch to capture latent semantic features.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src='images/AAAI24-3DVLP.png'>
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">Vision-Language Pre-training with Object Contrastive Learning for 3D Scene Understanding</papertitle>
+                            <br>
+                            Taolin Zhang, Sunan He, Tao Dai, Zhi Wang, <b>Bin Chen</b>, Shu-Tao Xia
+                            <br>
+                            <em>Thirty-Seventh AAAI Conference on Artificial Intelligence(<b>AAAI</b>)</em>, 2024
+                            <br>
+                            <a href="https://ojs.aaai.org/index.php/AAAI/article/view/28559">[AAAI]</a>
+                            <a href="https://github.com/iridescentttt/3DVLP">[code]</a>
+                            <br><br>
+                            <p>To extract universal 3D vision-language embedding, we propose a vision-language pre-training framework 3DVLP 
+                                (3D vision-language pre-training with object contrastive learning), which transfers flexibly on 3D vision-language downstream tasks.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src='images/MM23-KD-LTR.png'>
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">One-stage Low-resolution Text Recognition with High-resolution Knowledge Transfer</papertitle>
+                            <br>
+                            Hang Guo, Tao Dai, Mingyan Zhu, Guanghao Meng, <b>Bin Chen</b>, Zhi Wang, Shu-Tao Xia
+                            <br>
+                            <em>31st ACM International Conference on Multimedia(<b>MM</b>)</em>, 2023
+                            <br>
+                            <a href="https://dl.acm.org/doi/abs/10.1145/3581783.3611777">[ACM]</a>
+                            <a href="https://github.com/csguoh/KD-LTR">[code]</a>
+                            <br><br>
+                            <p> We attempt to adapt the recognizer to low-resolution inputs by transferring the knowledge from the high-resolution, 
+                                and propose an efficient and effective knowledge distillation framework to achieve multi-level knowledge transfer.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src='images/GIFD.png'>
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">GIFD: A Generative Gradient Inversion Method with Feature Domain Optimization</papertitle>
+                            <br>
+                            Hao Fang, <b>Bin Chen#</b>, Xuan Wang, Zhi Wang, Shu-Tao Xia
+                            <br>
+                            <em>Nineteenth International Conference on Computer Vision (<b>ICCV</b>)</em>, 2023
+                            <br>
+                            <a href="https://arxiv.org/abs/2308.04699">[arXiv]</a>
+                            <a href="https://github.com/ffhibnese/GIFD">[code]</a>
+                            <br><br>
+                            <p> To improve the gradient inversion attack for Federated Learning by GAN model, we propose Gradient Inversion over Feature Domains(GIFD), 
+                                which disassembles the GAN model and searches the feature domains of the intermediate layers.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src='images/IDPT-cm.png'>
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">Instance-aware Dynamic Prompt Tuning for Pre-trained Point Cloud Models</papertitle>
+                            <br>
+                            Yaohua Zha, Jingpeng Wang, Tao Dai, <b>Bin Chen</b>, Zhi Wang, Shu-Tao Xia
+                            <br>
+                            <em>Nineteenth International Conference on Computer Vision (<b>ICCV</b>)</em>, 2023
+                            <br>
+                            <a href="https://arxiv.org/abs/2304.07221">[arXiv]</a>
+                            <a href="https://github.com/zyh16143998882/ICCV23-IDPT">[code]</a>
+                            <br><br>
+                            <p> We propose an Instance-aware Dynamic Prompt Tuning (IDPT) for point cloud pre-trained models, 
+                                which utilizes a prompt module to perceive the semantic prior features of each instance.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src='images/MSFDPM.png'>
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">Learned Distributed Image Compression with Multi-Scale Patch Matching in Feature Domain</papertitle>
+                            <br>
+                            Yujun Huang, <b>Bin Chen#</b>, Shiyu Qin, Jiawei Li, Yaowei Wang, Dai Tao, Shu-Tao Xia
+                            <br>
+                            <em>Thirty-Seventh AAAI Conference on Artificial Intelligence (<b>AAAI</b>)</em>, 2023
+                            <br>
+                            <a href="https://arxiv.org/pdf/2209.02514.pdf">[arxiv]</a>
+                            <br><br>
+                            <p>  We propose MultiScale Feature Domain Patch Matching (MSFDPM) to fully
+                                utilizes side information at the decoder of the distributed image compression model.</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src='images/ConMH.png'>
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">Contrastive Masked Autoencoders for Self-Supervised Video Hashing</papertitle>
+                            <br>
+                            Yuting Wang, Jinpeng Wang, <b>Bin Chen#</b>, Ziyun Zeng, Shu-Tao Xia
+                            <br>
+                            <em>Thirty-Seventh AAAI Conference on Artificial Intelligence (<b>AAAI</b>)</em>, 2023
+                            <br>
+                            <a href="https://arxiv.org/pdf/2211.11210v1.pdf">[arxiv]</a>
+                            <a href="https://github.com/huangmozhi9527/ConMH">[code]</a>
+                            <br><br>
+                            <p> We propose a simple yet effective onestage SSVH method called ConMH, which incorporates video semantic information and video similarity relationship understanding in a single stage.</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src='images/TVTS.png'>
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">Learning Transferable Spatiotemporal Representations from Natural Script Knowledge</papertitle>
+                            <br>
+                            Ziyun Zeng, Yuying Ge, Xihui Liu, <b>Bin Chen#</b>, Ping Luo, Shu-Tao Xia, Yixiao Ge# 
+                            <br>
+                            <em>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>)</em>, 2023
+                            <br>
+                            <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Zeng_Learning_Transferable_Spatiotemporal_Representations_From_Natural_Script_Knowledge_CVPR_2023_paper.pdf">[CVPR]</a>
+                            <a href="https://github.com/TencentARC/TVTS">[code]</a>
+                            <br><br>
+                            <p>We introduce a new pretext task, Turning to Video for Transcript Sorting (TVTS), which sorts shuffled ASR scripts by attending to learned video representations.</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src='images/FSR.png'>
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">FSR: A General Frequency-oriented Framework to Accelerate Image Super-resolution Networks</papertitle>
+                            <br>
+                            Jinmin Li, Tao Dai, Mingyan Zhu, <b>Bin Chen</b>, Zhi Wang, Shu-Tao Xia
+                            <br>
+                            <em>Thirty-Seventh AAAI Conference on Artificial Intelligence (<b>AAAI</b>)</em>, 2023
+                            <br>
+                            <a href="https://ojs.aaai.org/index.php/AAAI/article/view/25218">[AAAI]</a>
+                            <a href="https://github.com/THU-Kingmin/FSR">[code]</a>
+                            <br><br>
+                            <p>We propose a general frequency-oriented framework (FSR) to accelerate SR networks by considering data characteristics in frequency domain.</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src='images/DAGC.png'>
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">DAGC: Data-aware Adaptive Gradient Compression</papertitle>
+                            <br>
+                            Rongwei Lu, Jiajun Song, <b>Bin Chen</b>, Laizhong Cui, Zhi Wang
+                            <br>
+                            <em>IEEE Conference on Computer Communications (<b>INFOCOM</b>)</em>, 2023
+                            <br>
+                            <a href="http://pages.mmlab.top/publications/DAGC_INFOCOM2023.pdf">[INFOCOM]</a>
+                            <br><br>
+                            <p>We propose an adaptive gradient
+                                compression strategy called DAGC, which assigns each worker a
+                                different compression ratio according to their data volumes.</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src='images/CS-AISC.png'>
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">Compressive Sensing based Asymmetric Semantic Image
+                                Compression for Resource-constrained IoT system</papertitle>
+                            <br>
+                            Yujun Huang, <b>Bin Chen#</b>, Jianghui Zhang, Han Qiu, Shu-Tao Xia
+                            <br>
+                            <em>Proc. the 59th Design Automation Conference (<b>DAC</b>)</em>, 2022
+                            <br>
+                            <a href="https://openreview.net/pdf?id=vTbmAnYigF">[DAC]</a>
+                            <br><br>
+                            <p>We propose Compressed Sensing based Asymmetric
+                                Semantic Image Compression (CS-ASIC) for resource-constrained
+                                IoT systems, which consists of a lightweight front encoder and a
+                                deep iterative decoder offloaded at the server.</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src='images/MeCoQ.png'>
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">Contrastive Quantization with Code Memory for Unsupervised Image Retrieval</papertitle>
+                            <br>
+                            Jinpeng Wang, Ziyun Zeng, <b>Bin Chen#</b>, Tao Dai, Shu-Tao Xia
+                            <br>
+                            <em>Thirty-Sixth AAAI Conference on Artificial Intelligence (<b>AAAI</b>)</em>, 2022
+                            <br>
+                            <a href="https://arxiv.org/pdf/2109.05205.pdf">[arxiv]</a>
+                            <a href="https://github.com/gimpong/AAAI22-MeCoQ">[code]</a>
+                            <br><br>
+                            <p>We learn unsupervised binary descriptors by contrastive learning, which can better capture discriminative visual semantics.</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src='images/HCQ.png'>
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">Hybrid Contrastive Quantization for Efficient Cross-View Video Retrieval</papertitle>
+                            <br>
+                            Jinpeng Wang, <b>Bin Chen#</b>, Dongliang Liao#, Ziyun Zeng, Shu-Tao Xia <i>et al.</i>
+                            <br>
+                            <em>ACM Web Conference (<b>WWW</b>)</em>, 2022
+                            <br>
+                            <a href="https://arxiv.org/pdf/2202.03384v1.pdf">[arxiv]</a>
+                            <a href="https://github.com/gimpong/WWW22-HCQ">[code]</a>
+                            <br><br>
+                            <p>We propose the first quantized representation learning method for cross-view video retrieval,
+                                namely Hybrid Contrastive Quantization (HCQ).</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src='images/WSDHQ-retrieval.png'>
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">Weakly Supervised Deep Hyperspherical Quantization for Image Retrieval</papertitle>
+                            <br>
+                            Jinpeng Wang*, <b>Bin Chen* #</b>
+                            <br>
+                            <em>Thirty-Fifth AAAI Conference on Artificial Intelligence (<b>AAAI</b>)</em>, 2021
+                            <br>
+                            <a href="https://aaai.org/papers/02755-weakly-supervised-deep-hyperspherical-quantization-for-image-retrieval/">[AAAI]</a>
+                            <a href="https://github.com/gimpong/AAAI21-WSDHQ">[code]</a>
+                            <br><br>
+                            <p>We propose Weakly-Supervised Deep Hyperspherical Quantization (WSDHQ), which is the first work to learn deep quantization from weakly tagged images.</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src='images/MAN-IR.png'>
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">Mix-order Attention Networks for Image Restoration</papertitle>
+                            <br>
+                            Tao Dai*, Yalei Lv*, <b>Bin Chen#</b>, et al
+                            <br>
+                            <em>Twenty-Eighth ACM International Conference on Multimedia (<b>MM</b>)</em>, 2021
+                            <br>
+                            <a href="https://dl.acm.org/doi/10.1145/3474085.3475205">[ACM]</a>
+                            <br><br>
+                            <p> Most existing CNN-based methods neglect the diversity of image contents and degradations in the corrupted images. 
+                                We propose deep mix-order attention networks (MAN) to extract features that capture rich feature statistics within networks.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src='images/DHTA-method.png'>
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">Targeted Attack for Deep Hashing based Retrieval</papertitle>
+                            <br>
+                            Jiawang Bai*, <b>Bin Chen* #</b>, Yiming Li*, Dongxian Wu, Weiwei Guo, Shu-Tao Xia, En-Hui Yang
+                            <br>
+                            <em>Thirteenth European Conference on Computer Vision (<b>ECCV</b>)</em>, 2020
+                            <br>
+                            <a href="https://arxiv.org/abs/2004.07955">[arxiv]</a>
+                            <br><br>
+                            <p> We propose a novel method, dubbed deep hashing targeted attack (DHTA), to study the targeted attack on
+                                the deep hashing based retrieval.</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src='images/AA-DPQN.png'>
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">Adversarial Attack on Deep Product Quantization Network for Image Retrieval</papertitle>
+                            <br>
+                            Yan Feng*, <b>Bin Chen*</b>, Tao Dai, Shu-Tao Xia
+                            <br>
+                            <em>Thirty-Fourth AAAI Conference on Artificial Intelligence (<b>AAAI</b>)</em>, 2020
+                            <br>
+                            <a href="https://ojs.aaai.org/index.php/AAAI/article/view/6708">[AAAI]</a>
+                            <br><br>
+                            <p>We propose product quantization adversarial generation (PQ-AG), a simple yet effective method to generate adversarial examples for product quantization based retrieval systems.</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="font-small">
+                    <tr>
+                        <td style="padding:10px; width:25%;" align="center">
+                            <img style="width:100%;" src='images/DIPDefend.png'>
+                        </td>
+                        <td style="padding:10px;" valign="center">
+                            <papertitle style="text-decoration: underline;">DIPDefend: Deep Image Prior Driven Defense against Adversarial Examples</papertitle>
+                            <br>
+                            Tao Dai*, Yan Feng*, Dongxian Wu, <b>Bin Chen#</b>, <i>et al</i>
+                            <br>
+                            <em>28th ACM International Conference on Multimedia (<b>MM</b>)</em>, 2020
+                            <br>
+                            <a href="https://dl.acm.org/doi/10.1145/3394171.3413898">[ACM]</a>
+                            <a href="https://github.com/Kira0096/DIPDefend">[code]</a>
+                            <br><br>
+                            <p>We propose an effective Deep Image Prior Driven Defense (DIPDefend) method against adversarial examples.</p>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+
+            <!-- Research Groups -->
+            <li id="groups" class="card">
+                <headline>Research Groups</headline>
+                <div style="border-radius: 8px; height: 160px; width: 500px; overflow: hidden; margin: auto">
+                    <img height="100%" src="images/lab-logo-ITDL.png">
+                </div>
+                <p class="font-normal" style="color: red;"><b>[5 PhD students, 10+ master students, 10+ undergraduates from HITSZ/Tsinghua SIGS/Nankai University]</b></p>
+                <ul>
+                    <li class="font-normal">
+                        <dot></dot><b>Data Compression and Channel Coding Group</b><br>
+                        <!-- <p style="margin-left: 24px;">[details coming soon ...]</p> -->
+                    </li>
+                    <li class="font-normal">
+                        <dot></dot><b>AI Security Group</b>
+                        <!-- <p style="margin-left: 24px;">[details coming soon ...]</p> -->
+                    </li>
+                   <li class="font-normal">
+                        <dot></dot><b>Data Retrieval Group</b>
+                        <!-- <p style="margin-left: 24px;">[details coming soon ...]</p> -->
+                    </li>
+                </ul>
+                <p class="font-normal" style="margin: 8px 0 4px 0; font-weight: bold; color: hsl(204, 64%, 36%);">
+                </p>
+               <p class="font-normal" style="color: red;"><b>*Outstanding students during the internship can be recommended to Tsinghua University, University of Waterloo, Nanyang Technological University, Hong Kong University of Science and Technology, and other well-known domestic and foreign universities for further postgraduate studies.</b></p>
+            </li>
+
+            <!-- teaching -->
+            <li id="teaching" class="card">
+                <headline>Teaching</headline>
+                <ul>
+                    <li class="font-normal">
+                        <dot></dot><b>Set Theory and Graph Theory</b>, Fall 2022/2023 
+                    </li>
+                  <li class="font-normal">
+                        <dot></dot><b>Formal Language and Automata</b>, Spring 2022/2023 
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Awards&Honors -->
+            <!--
+            <li id="awards" class="card">
+                <headline>Awards&Honors</headline>
+                <p class="font-normal" style="color: red;"><b>[施工中...(待翻译)]</b></p>
+                <p class="font-normal">
+                    <dot></dot>2022年度广东省计算机学会优秀论文二等奖;<br>  
+                    <dot></dot>2021年深圳市人工智能学会优秀博士论文 (排名第一);<br>
+                    <dot></dot>2021年中国电子学会信息论分会优秀博士论文 (年度唯一);<br>
+                    <dot></dot>清华大学计算机系优秀博士毕业生;<br>
+                    <dot></dot>清华大学博士生国家奖学金2次, 2019/2020, Top 0.3%;<br>
+                    <dot></dot>华南师范大学硕士生国家奖学金1次, 2015, Top 1%;<br>                   
+                </p>
+            </li>
+            -->
+
+            <!-- Academic Services -->
+            <li id="services" class="card">
+                <headline>Academic Services</headline>
+
+                <p class="font-normal"><dot></dot><b>Journal Reviewer</b></p>
+                <ul class="font-normal">
+                    <li style="margin-left: 24px;">IEEE Transactions on Information Theory</li>
+                    <li style="margin-left: 24px;">IEEE Transactions on Communications</li>
+                    <li style="margin-left: 24px;">IEEE communication letter</li>
+                    <li style="margin-left: 24px;">IEICE Transactions on Fundamentals of Electronics, Communications, and Computer Sciences</li>
+                    <li style="margin-left: 24px;">IEICE Transactions on Information and Systems</li>
+                    <li style="margin-left: 24px;">Science China on Information Science</li>
+                </ul>
+                
+                <p class="font-normal"><dot></dot><b>Conference Reviewer / Program Committee Member</b><br></p>
+                <ul class="font-normal">
+                    <li style="margin-left: 24px;">Neural Information Processing Systems (NeurIPS-20)</li>
+                    <li style="margin-left: 24px;">IEEE International Symposium on Information Theory (ISIT-17/23)</li>
+                    <li style="margin-left: 24px;">IEEE Data Compression Conference (DCC-20/21)</li>
+                    <li style="margin-left: 24px;">AAAI Conference on Artificial Intelligence (AAAI-21/22/23)</li>
+                    <li style="margin-left: 24px;">International Joint Conference on Artificial Intelligence (IJCAI-21/22/23)</li>
+                    <li style="margin-left: 24px;">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR-21/23)</li>
+                   <li style="margin-left: 24px;">IEEE/CVF International Conference on Computer Vision (ICCV-23)</li>
+                </ul>
+
+                <p class="font-normal"><dot></dot><b>AMS Mathematical Reviewer</b><br></p>
+                <ul class="font-normal">
+                    <li style="margin-left: 24px;"></li>
+                </ul>
+            </li>
+        </ul>
+
+        <footer>
+            <!-- 网页脚注信息: 待补充 -->
+            <!-- <div style="width: 1020px; height: 40px; margin-left: -40px; background-color: rgba(121, 147, 162, 0.8);">template</div> -->
+            <div style="text-align: right; margin: 20px" class="font-normal"><a href="https://jonbarron.info/">Website Template</a></div>
+        </footer>
+    </main>
+</body>
+
+</html>
